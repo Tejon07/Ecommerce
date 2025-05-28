@@ -1,0 +1,26 @@
+{
+  "name": "mi-tienda",
+  "version": "1.0.0",
+  "main": "backend/servidor.js",
+  "scripts": {
+    "start": "node backend/servidor.js",
+    "dev": "nodemon backend/servidor.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

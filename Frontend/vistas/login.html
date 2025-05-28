@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="../css/estilos.css"/>
+</head>
+<body>
+  <div class="contenedor">
+    <h1 class="titulo">Iniciar Sesión</h1>
+
+    <form id="login-form">
+        <input type="text" name="usuario" placeholder="Usuario" required />
+        <input type="password" name="contrasena" placeholder="Contraseña" required />
+        <button type="submit">Ingresar</button>
+      </form>
+      
+      <script>
+        document.getElementById("login-form").addEventListener("submit", function(e) {
+          e.preventDefault(); // Evita que se recargue la página
+          alert("¡Bienvenido!");
+          window.location.href = "usuarios.html"; // Redirige a usuarios.html
+        });
+      </script>
+
+    <div class="registro">
+      <h2 class="titulo">¿Aún no tienes cuenta?</h2>
+      <a href="registro.html" class="boton-registro">Registrarse</a>
+    </div>
+  </div>
+
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>

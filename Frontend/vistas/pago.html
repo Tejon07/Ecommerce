@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pago</title>
+  <link rel="stylesheet" href="../css/estilos.css"/>
+</head>
+<body>
+  <!-- Menú flotante -->
+  <div class="menu-flotante">
+    <h4>Menú</h4>
+    <a href="#">Inicio</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="usuarios.html">Mi cuenta</a>
+    <a href="#">Historial de compras</a>
+    <a href="#">Ofertas especiales</a>
+    <a href="#">Ayuda y soporte</a>
+    <a href="#">Configuración</a>
+    <a href="#">Cerrar sesión</a>
+  </div>
+
+  <div class="contenedor">
+    <h1 class="titulo">Pago</h1>
+    <form id="pago-form">
+      <select name="metodo">
+        <option value="efectivo">Efectivo</option>
+        <option value="qr">QR</option>
+      </select>
+      <input type="number" step="0.01" name="monto" placeholder="Monto a pagar" required />
+      <button type="submit">Pagar</button>
+    </form>
+
+    <div id="resultado-pago"></div>
+  </div>
+
+  <script type="module" src="js/menuFlotante.js"></script>
+  <script type="module" src="js/pago.js"></script>
+</body>
+</html>

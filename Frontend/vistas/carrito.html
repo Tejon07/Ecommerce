@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito</title>
+  <link rel="stylesheet" href="css/estilo.css"/>
+</head>
+<body>
+  <!-- Menú flotante -->
+  <div class="menu-flotante">
+    <h4>Menú</h4>
+    <a href="#">Inicio</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="usuarios.html">Mi cuenta</a>
+    <a href="#">Historial de compras</a>
+    <a href="#">Ofertas especiales</a>
+    <a href="#">Ayuda y soporte</a>
+    <a href="#">Configuración</a>
+    <a href="#">Cerrar sesión</a>
+  </div>
+
+  <div class="contenedor">
+    <h1 class="titulo">Carrito de Compras</h1>
+    <div id="carrito-container" class="carrito"></div>
+    <p id="total" class="titulo"></p>
+    <a href="pago.html"><button>Proceder al pago</button></a>
+  </div>
+
+  <script type="module" src="js/menuFlotante.js"></script>
+  <script type="module" src="js/carrito.js"></script>
+</body>
+</html>
