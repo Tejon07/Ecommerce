@@ -1,7 +1,7 @@
 {
   "name": "mi-tienda",
   "version": "1.0.0",
-  "main": "backend/servidor.js",
+  "main": "index.js",
   "scripts": {
     "start": "node backend/servidor.js",
     "dev": "nodemon backend/servidor.js"

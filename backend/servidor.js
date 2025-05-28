@@ -72,10 +72,23 @@ app.use((req, res) => {
   res.status(404).json({ error: 'Ruta no encontrada' });
 });
 
-// 7) Manejo global de errores
+// 7) Middleware para manejo de errores 404
+app.use((req, res) => {
+    res.status(404).json({
+        success: false,
+        message: 'Ruta no encontrada',
+        path: req.url
+    });
+});
+
+// Middleware global para manejo de errores
 app.use((err, req, res, next) => {
-  console.error('Error inesperado:', err);
-  res.status(500).json({ error: 'Error interno del servidor' });
+    console.error('Error no manejado:', err.stack);
+    res.status(500).json({
+        success: false,
+        message: 'Error interno del servidor',
+        error: process.env.NODE_ENV === 'development' ? err.message : 'Error interno'
+    });
 });
 
 // 8) Arrancar servidor
