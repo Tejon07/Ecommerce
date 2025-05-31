@@ -1,10 +1,10 @@
 {
   "name": "mi-tienda",
   "version": "1.0.0",
-  "main": "backend/servidor.js",
+  "main": "backend/server.js",
   "scripts": {
-    "start": "node backend/servidor.js",
-    "dev": "nodemon backend/servidor.js"
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
   },
   "keywords": [
     "ecommerce",
