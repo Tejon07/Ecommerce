@@ -228,7 +228,7 @@ class ProductoControlador {
     async eliminar(req, res) {
         try {
             const { id } = req.params;
-        console.log('Intentando eliminar producto ID:', id);  // <--- Añade esto
+        console.log('Intentando eliminar producto ID:', id);
             if (!id || isNaN(id)) {
                 return res.status(400).json({
                     success: false,
@@ -237,7 +237,7 @@ class ProductoControlador {
             }
 
             const resultado = await productoModel.eliminar(id);
-                    console.log('Resultado eliminación:', resultado);  // <--- Y esto también
+                    console.log('Resultado eliminación:', resultado);
             if (!resultado.success) {
                 return res.status(404).json(resultado);
             }
